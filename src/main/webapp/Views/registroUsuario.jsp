@@ -1,54 +1,58 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: danie
-  Date: 9/5/2024
-  Time: 10:14
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilosForm.css">
-    <title>Sistema bancario</title>
+    <title>Registro de Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="containerBox">
-    <h2>Registro de usuario</h2>
-    <form action="/registroControlador" method="post">
+<body style="background-color: #ffffff;">
+<jsp:include page="../WEB-INF/Utilidades/navbar.jsp"/>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Registro de Usuario</h2>
+                    <form id="registroForm" action="/registroControlador" method="post">
 
-        <div class="inputBox">
-            <label for="Nombre">Nombre:</label>
-            <input type="text" id="Nombre" name="Nombre" required/>
+                        <div class="form-group">
+                            <label for="Nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="Nombre" name="Nombre" required minlength="5"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Pais">País:</label>
+                            <select class="form-control" id="Pais" name="Pais" required>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="NumTarjeta">Número de tarjeta de débito:</label>
+                            <input type="text" class="form-control" id="NumTarjeta" name="NumTarjeta" required minlength="8" maxlength="8" pattern="[0-9]{8}" title="Por favor, ingrese solo números."/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PIN">PIN:</label>
+                            <input type="password" class="form-control" id="PIN" name="PIN" required minlength="4" maxlength="4"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Registrar usuario</button>
+                    </form>
+                    <a href="registroUsuario.jsp" class="linkBox">¿No tienes cuenta? Puedes crear una cuenta aquí</a>
+                </div>
+            </div>
         </div>
-
-        <div class="inputBox">
-            <label for="Nombre">Pais:</label>
-            <select name="Pais">
-                <option value="Costa Rica">Costa Rica</option>
-                <option value="El Salvador">El Salvador</option>
-                <option value="Guatemala">Guatemala</option>
-                <option value="Honduras">Honduras</option>
-                <option value="Nicaragua">Nicaragua</option>
-                <option value="Panamá">Panamá</option>
-            </select>
-        </div>
-
-        <div class="inputBox">
-            <label for="NumTarjeta">Numero de tarjeta de debito:</label>
-            <input type="text" id="NumTarjeta" name="NumTarjeta" required/>
-        </div>
-
-        <div class="inputBox">
-            <label for="PIN">PIN:</label>
-            <input type="password" id="PIN" name="PIN" required/>
-        </div>
-
-        <input type="submit" name="Enviar" value="Registrar usuario">
-
-        <a href="registroUsuario.jsp" class="linkBox">¿No tienes cuenta? Puedes crear una cuenta aquí </a>
-    </form>
+    </div>
 </div>
+<jsp:include page="../WEB-INF/Utilidades/footer.jsp"/>
+
+<script src="../js/validaciones.js"></script>
 </body>
 </html>

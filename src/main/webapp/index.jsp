@@ -10,7 +10,7 @@
 <body>
 <div class="containerBox">
     <h2>Bienvenido usuario, Inicia sesion por favor</h2>
-    <form action="/loginControlador" method="get">
+    <form id="LoginForm" action="/LoginController" method="post">
 
         <div class="inputBox">
             <label for="NumTarjeta">Numero de tarjeta de debito:</label>
@@ -24,9 +24,11 @@
 
         <input type="submit" name="Enviar" value="Iniciar sesion">
 
-        <a href="Views/registroUsuario.jsp" class="linkBox">¿No tienes cuenta? Puedes crear una cuenta aquí </a>
+        <a href="registroUsuario.jsp" class="linkBox">¿No tienes cuenta? Puedes crear una cuenta aquí </a>
     </form>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+<script src="js/validacionesLogin.js"></script>
 </body>
 </html>

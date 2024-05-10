@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    $("#registroForm").submit(function(event) {
-        if (!validarNombre()) {
-            event.preventDefault();
-        }
+    $("#LoginForm").submit(function(event) {
+
+
         if (!validarTarjeta()) {
             event.preventDefault();
         }
@@ -11,18 +10,6 @@ $(document).ready(function() {
         }
     });
 
-    function validarNombre() {
-        var nombreValue = $("#Nombre").val().trim();
-        var errorNombre = $("#errorNombre");
-
-        if (nombreValue.length < 5) {
-            mostrarError(errorNombre, "El nombre debe tener al menos 5 caracteres.");
-            return false;
-        } else {
-            ocultarError(errorNombre);
-            return true;
-        }
-    }
 
     function validarTarjeta() {
         var tarjetaValue = $("#NumTarjeta").val().trim();

@@ -1,4 +1,4 @@
-package Models.Beans;
+package Models.Validaciones;
 
 public class UsuarioValidaciones {
 }

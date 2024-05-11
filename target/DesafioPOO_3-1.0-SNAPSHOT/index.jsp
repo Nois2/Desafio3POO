@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
+                    <a class="nav-icon position-relative text-decoration-none" href="registroUsuario.jsp">
                         <i class="fa fa-fw fa-user text-dark mr-3">Login</i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
@@ -188,12 +188,12 @@
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/214/214859.png" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Tarjetas de debito</h5>
+                <h5 class="text-center mt-3 mb-3">Tarjetas de crédito</h5>
                 <p class="text-center"><a class="btn btn-success" href="registroUsuario.jsp">Registrate ahora</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1999/1999304.png" class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Creditos</h2>
+                <h2 class="h5 text-center mt-3 mb-3">Créditos</h2>
                 <p class="text-center"><a class="btn btn-success" href="registroUsuario.jsp">Registrate ahora</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">

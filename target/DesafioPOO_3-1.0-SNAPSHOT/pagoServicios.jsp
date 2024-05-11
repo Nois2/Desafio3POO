@@ -13,17 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago de Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa; /* Color de fondo suave */
-        }
-        .card {
-            margin-top: 20px;
-        }
-        .container {
-            padding-top: 50px; /* Espaciado superior */
-        }
-    </style>
+    <link rel="stylesheet" href="pagoServicios.css">
 </head>
 <body>
 <header>

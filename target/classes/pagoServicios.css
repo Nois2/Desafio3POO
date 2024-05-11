@@ -1,0 +1,24 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030;
+}
+body {
+    background-color: #f8f9fa;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.card {
+    margin-top: 20px;
+}
+.container {
+    padding-top: 50px;
+}

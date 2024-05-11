@@ -1,6 +1,6 @@
 package Models.Validaciones;
 
-import Models.Beans.PagosServicios;
+import Models.Beans.PagosBean;
 
 import java.util.regex.Pattern;
 
@@ -19,13 +19,13 @@ public class PagoServiciosValidaciones {
         return descriptionService.length() >= 5;
     }
 
-    public static boolean isNombreServiceValid(PagosServicios pagosServicios) {
+    public static boolean isNombreServiceValid(PagosBean pagosServicios) {
         return (
                 isMontoValid(pagosServicios.getMonto()) &&
                         isIdServiceValid(pagosServicios.getId())
         && isNameServiceValid(pagosServicios.getNombre()));
     }
-    public static boolean isNombreServiceWithoutNameServiceValid(PagosServicios pagosServicios) {
+    public static boolean isNombreServiceWithoutNameServiceValid(PagosBean pagosServicios) {
         return(
                 isMontoValid(pagosServicios.getMonto()) &&
                         isIdServiceValid(pagosServicios.getId())

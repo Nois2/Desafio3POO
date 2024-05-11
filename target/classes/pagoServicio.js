@@ -6,7 +6,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
         return;
     }
 
-    const saldoActual = 1000; // Simulación de saldo actual
+    const saldoActual = 1000;
     processPayment(monto, saldoActual);
 });
 
@@ -20,7 +20,7 @@ function showMessage(message) {
 
 function processPayment(monto, saldoActual) {
     if (monto <= saldoActual) {
-        saldoActual -= monto; // Reducción del saldo
+        saldoActual -= monto;
         showMessage('La transacción se realizó con éxito. Saldo restante: ' + saldoActual);
     } else {
         showMessage('No tienes saldo suficiente para realizar la operación.');

@@ -11,15 +11,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
 </head>
 
 <body>
-    <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
@@ -36,10 +33,7 @@
             </div>
         </div>
     </nav>
-    <!-- Close Top Nav -->
 
-
-    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
@@ -56,7 +50,7 @@
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">acerca de</a>
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
                         </li>
 
                     </ul>
@@ -80,9 +74,9 @@
 
         </div>
     </nav>
-    <!-- Close Header -->
 
-    <!-- Modal -->
+
+
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
@@ -120,9 +114,7 @@
         </div>
     </section>
     
-    <!-- Close Banner -->
 
-    <!-- Start Section -->
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
@@ -159,9 +151,7 @@
         </div>
     </section>
     
-    <!-- End Section -->
 
-    <!-- Start Brands -->
     <section class="bg-light py-5">
         <div class="container my-4">
             <div class="row text-center py-3">
@@ -179,26 +169,18 @@
                                 <i class="text-light fas fa-chevron-left"></i>
                             </a>
                         </div>
-                        <!--End Controls-->
 
-
-
-                        <!--Controls-->
                         <div class="col-1 align-self-center">
                             <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
                                 <i class="text-light fas fa-chevron-right"></i>
                             </a>
                         </div>
-                        <!--End Controls-->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End Brands-->
 
-
-    <!-- Start Footer -->
 
         <footer class="bg-dark" id="tempaltemo_footer">
         
@@ -220,15 +202,12 @@
               </footer>
     
         </footer>
-    <!-- End Footer -->
 
-    <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- End Script -->
 </body>
 
 </html>

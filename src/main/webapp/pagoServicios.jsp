@@ -13,17 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago de Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .card {
-            margin-top: 20px;
-        }
-        .container {
-            padding-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="pagoServicios.css">
 </head>
 <body>
 <header>
@@ -59,6 +49,6 @@
 </footer>
 
 <script type="module" src="js/pagoServicio.js"></script>
-<script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script> <!-- Reemplaza con tu kit de FontAwesome -->
 </body>
 </html>

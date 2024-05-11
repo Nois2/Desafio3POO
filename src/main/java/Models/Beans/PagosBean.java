@@ -1,12 +1,12 @@
 package Models.Beans;
 
-public class PagosServicios {
+public class PagosBean {
     public String id;
     public String nombre;
     public Double monto;
-    public PagosServicios() {}
+    public PagosBean() {}
 
-    public PagosServicios(String id, String nombre, Double monto) {
+    public PagosBean(String id, String nombre, Double monto) {
         this.id = id;
         this.nombre = nombre;
         this.monto = monto;

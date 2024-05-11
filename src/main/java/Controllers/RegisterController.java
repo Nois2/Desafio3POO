@@ -30,7 +30,8 @@ public class RegisterController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Double saldo = 0.0;
-        if (request.getParameter("Saldo").isEmpty()) {saldo = Double.parseDouble(request.getParameter("Saldo"));}
+        if (!request.getParameter("Saldo").isEmpty())
+        {saldo = Double.parseDouble(request.getParameter("Saldo"));}
         TarjetaBean tj = new TarjetaBean(
                 request.getParameter("Nombre"),
                 request.getParameter("NumTarjeta"),

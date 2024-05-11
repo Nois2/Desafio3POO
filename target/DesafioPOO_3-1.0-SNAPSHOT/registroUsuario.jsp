@@ -47,7 +47,7 @@
             <input type="password" id="PIN" name="PIN" placeholder="Ingrese su PIN de 4 dígitos" required />
         </div>
         <div class="inputBox">
-            <label for="PIN">PIN:</label>
+            <label for="Saldo">Saldo:</label>
             <input type="number" id="Saldo" name="Saldo" placeholder="Ingrese su saldo Inicial" required />
         </div>
         <div class="inputBox">

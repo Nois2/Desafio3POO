@@ -18,11 +18,7 @@
 <%@include file="WEB-INF/Utilidades/navbar.jsp"%>
 <p id="pais">${datosUsuario.pais}</p>
 <header>
-    ${usuario.nombre}
-    ${usuario.numeroTarjeta}
-    ${usuario.pin}
-    ${usuario.pais}
-    ${usuario.saldo}
+
 
     <h1>Bienvenido, <span id="nombreUsuario">${datosUsuario.nombre}</span></h1>
     <p>Tarjeta: <span id="numeroTarjeta">${datosUsuario.numeroTarjeta}</span></p>

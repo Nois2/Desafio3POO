@@ -12,8 +12,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link href="css/estiloMenu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="css/estilosForm.css">
 </head>
 <body>
 <jsp:include page="WEB-INF/Utilidades/navbar.jsp"/>
@@ -25,8 +26,8 @@
         <div class="col-md-6">
             <div class="btn-group d-flex" role="group">
                 <a href="pagoServicios.jsp" class="buttonMenu"><span class="buttonSpan">Pagos</span></a>
-                <a href="transferenciaNacional.jsp" class="buttonMenu"><span class="buttonSpan">Transferencias nacionales</span></a>
-                <a href="transferenciaInternacional.jsp" class="buttonMenu"><span class="buttonSpan">Transferencias internacional</span>es</a>
+                <a href="transferenciaNacional.jsp" class="buttonMenu"><span class="buttonspan">Transferencias nacionales</span></a>
+                <a href="transferenciaInternacional.jsp" class="buttonMenu"><span class="buttonspan">Transferencias internacional</span>es</a>
             </div>
         </div>
     </div>

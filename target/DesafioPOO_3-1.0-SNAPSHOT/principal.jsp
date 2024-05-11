@@ -6,25 +6,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    TarjetaBean datos = (TarjetaBean) session.getAttribute("datosUsuario");
- if (datos != null) {}else {response.sendRedirect("index.jsp");}
-%>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="css/estilosForm.css">
+    <link rel="stylesheet" href="css/estiloMenu.css">
 </head>
 <body>
-<jsp:include page="WEB-INF/Utilidades/navbar.jsp"/>
-<
-<h2>Bienvenido</h2>
-${datosUsuario.nombre}
+<%@include file="WEB-INF/Utilidades/navbar.jsp"%>
+<h2>Bienvenido ${datosUsuario.nombre}</h2>
+
 <h3>Selecciona una accion a tramitar</h3>
 <div class="container">
     <div class="row justify-content-center mt-5">

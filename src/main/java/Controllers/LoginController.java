@@ -56,11 +56,11 @@ public class LoginController extends HttpServlet {
                 }
                 //Fin de validacion que deberas se envian a los datos
 */
-
+                RequestDispatcher rd = request.getRequestDispatcher("principal.jsp");
 
 
                 // Redirigir a la página principal
-                response.sendRedirect("principal.jsp");
+                rd.forward(request, response);
             } else {
                 // Si las credenciales son inválidas, redirigir a una página de error
                 RequestDispatcher rd = request.getRequestDispatcher("index.jsp");

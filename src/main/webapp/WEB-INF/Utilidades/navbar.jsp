@@ -7,7 +7,7 @@
 --%>
 <%
     TarjetaBean datos = (TarjetaBean) session.getAttribute("datosUsuario");
-    if (datos != null) {}else {response.sendRedirect("index.jsp");}
+    if (datos != null) {}else {response.sendRedirect("login.jsp");}
 %>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">

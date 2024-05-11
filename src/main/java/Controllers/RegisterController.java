@@ -41,7 +41,7 @@ public class RegisterController extends HttpServlet {
 
         if(isValidData(tj)){
             tj.guardarEnCSV();
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("login.jsp");
         }
         else {
             RequestDispatcher rd = request.getRequestDispatcher("registroUsuario.jsp");

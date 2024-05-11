@@ -29,7 +29,7 @@ public class LogoutController extends HttpServlet {
         String CerrarSesion = request.getParameter("CerrarSesion");
         if(CerrarSesion.equals("True")){
             request.getSession().invalidate();
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("login.jsp");
         }
         else {
             RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/PageErrors/errorPage.jsp");

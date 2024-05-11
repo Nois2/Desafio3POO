@@ -32,7 +32,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Pago de Servicios</h5>
                     <p class="card-text">Realiza pagos de servicios fácilmente.</p>
-                    <a href="#" class="btn btn-primary">Pagar</a>
+                    <a href="pagoServicios.jsp" class="btn btn-primary">Pagar</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Transferencia Nacional</h5>
                     <p class="card-text">Transfiere dinero a cuentas nacionales.</p>
-                    <a href="#" class="btn btn-primary">Transferir</a>
+                    <a href="transferenciaNacional.jsp" class="btn btn-primary">Transferir</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Transferencia Internacional</h5>
                     <p class="card-text">Realiza transferencias internacionales de manera segura.</p>
-                    <a href="#" class="btn btn-primary">Transferir</a>
+                    <a href="transferenciaInternacional.jsp" class="btn btn-primary">Transferir</a>
                 </div>
             </div>
         </div>

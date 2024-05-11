@@ -63,7 +63,7 @@ public class LoginController extends HttpServlet {
                 rd.forward(request, response);
             } else {
                 // Si las credenciales son inválidas, redirigir a una página de error
-                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
                 request.setAttribute("mensaje", "Usuario no valido");
                 rd.forward(request, response);
             }

@@ -57,7 +57,7 @@
         <input type="submit" name="Enviar" value="Registrar usuario">
     </form>
 
-    <a href="index.jsp" class="linkBox">¿Ya tienes una cuenta? Puedes iniciar sesion aqui</a>
+    <a href="login.jsp" class="linkBox">¿Ya tienes una cuenta? Puedes iniciar sesion aqui</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="js/validaciones.js"></script>

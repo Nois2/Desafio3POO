@@ -1,17 +1,14 @@
-<footer class="footer mt-auto py-3">
+<footer class="bg-dark text-white text-center py-3">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <p>Nombres:</p>
-                <ul>
-                    <li>Noel Guevara - GF222473</li>
-                    <li>Abner Duran - DL170325</li>
-                    <li>Nombre 3 - Carnet 3</li>
-                    <li>Nombre 4 - Carnet 4</li>
+            <div class="col-md-6 mx-auto">
+                <p>&copy; 2024 Banco UDB. Todos los derechos reservados.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Abner Duran, DL170325</li>
+                    <li class="list-inline-item">Noel Guevara, GF222473</li>
+                    <li class="list-inline-item">Sergio Sanchez, SM181265</li>
+                    <li class="list-inline-item">Daniel Portillo, PR222719</li>
                 </ul>
-            </div>
-            <div class="col">
-                <p>Universidad Don Bosco - Todos los derechos reservados</p>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="Models.Beans.TarjetaBean" %><%--
   Created by IntelliJ IDEA.
   User: danie
   Date: 9/5/2024
@@ -6,6 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    TarjetaBean datos = (TarjetaBean) session.getAttribute("datosUsuario");
+ if (datos != null) {}else {response.sendRedirect("index.jsp");}
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +22,8 @@
 </head>
 <body>
 <jsp:include page="WEB-INF/Utilidades/navbar.jsp"/>
+<h2>Bienvenido ${datosUsuario.nombre}</h2>
 
-<h2>Bienvenido <%=session.getAttribute("datosUsuario")%></h2>
 <h3>Selecciona una accion a tramitar</h3>
 <div class="container">
     <div class="row justify-content-center mt-5">

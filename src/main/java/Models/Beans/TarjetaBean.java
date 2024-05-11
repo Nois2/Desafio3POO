@@ -210,7 +210,37 @@ public class TarjetaBean {
 
             return credencialesEncontradas.toArray(new TarjetaBean[0]);
         }
-        public static void main(){
+    public TarjetaBean ObtenerDatosPorCredenciales2(String numeroTarjeta, String pin) throws IOException {
+        String rutaArchivo = "usuarios.txt";
+        BufferedReader br = null;
+        String linea = "";
+
+        try {
+            br = new BufferedReader(new FileReader(rutaArchivo));
+            // Leer el archivo línea por línea
+            while ((linea = br.readLine()) != null) {
+                // Dividir la línea en sus partes (campos separados por coma)
+                String[] datosUsuario = linea.split(",");
+                // Verificar si las credenciales coinciden con algún usuario en el archivo CSV
+                if (datosUsuario.length >= 5 && datosUsuario[2].equals(numeroTarjeta) && datosUsuario[3].equals(pin)) {
+                    // Crear y retornar el objeto TarjetaBean
+                    return new TarjetaBean(datosUsuario[0], datosUsuario[3], datosUsuario[2], datosUsuario[2], Double.parseDouble(datosUsuario[4]));
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Manejar la excepción adecuadamente según tus necesidades
+        } finally {
+            if (br != null) {
+                br.close(); // Cerrar el BufferedReader
+            }
+        }
+
+        // Si no se encontraron credenciales válidas, retorna null
+        return null;
+    }
+
+    public static void main(){
             TarjetaBean TarjetaBean = new TarjetaBean();
             TarjetaBean.setPin("22");
         }

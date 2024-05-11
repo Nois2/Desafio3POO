@@ -9,13 +9,24 @@
 
     <link rel="stylesheet" href="css/estiloPrincipal.css">
 </head>
+<style>
+    #pais{
+        visibility: hidden;
+    }
+</style>
 <body>
 <%@include file="WEB-INF/Utilidades/navbar.jsp"%>
-<p>${datosUsuario.nombre}</p>
+<p id="pais">${datosUsuario.pais}</p>
 <header>
-    <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
-    <p>Tarjeta: <span id="numeroTarjeta">**** **** **** 1234</span></p>
-    <p>Monto Disponible: <span id="montoDisponible">22.26</span> Lempiras</p>
+    ${usuario.nombre}
+    ${usuario.numeroTarjeta}
+    ${usuario.pin}
+    ${usuario.pais}
+    ${usuario.saldo}
+
+    <h1>Bienvenido, <span id="nombreUsuario">${datosUsuario.nombre}</span></h1>
+    <p>Tarjeta: <span id="numeroTarjeta">${datosUsuario.numeroTarjeta}</span></p>
+    <p>Monto Disponible: <span id="montoDisponible">${datosUsuario.saldo}</span> Lempiras</p>
 </header>
 <div class="container mt-5">
     <div class="row">

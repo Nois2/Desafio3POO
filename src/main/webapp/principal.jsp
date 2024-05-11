@@ -18,9 +18,11 @@
 <%@include file="WEB-INF/Utilidades/navbar.jsp"%>
 <p id="pais">${datosUsuario.pais}</p>
 <header>
-    <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
-    <p>Tarjeta: <span id="numeroTarjeta">**** **** **** 1234</span></p>
-    <p>Monto Disponible: <span id="montoDisponible">22.26</span> Lempiras</p>
+
+
+    <h1>Bienvenido, <span id="nombreUsuario">${datosUsuario.nombre}</span></h1>
+    <p>Tarjeta: <span id="numeroTarjeta">${datosUsuario.numeroTarjeta}</span></p>
+    <p>Monto Disponible: <span id="montoDisponible">${datosUsuario.saldo}</span> Lempiras</p>
 </header>
 <div class="container mt-5">
     <div class="row">

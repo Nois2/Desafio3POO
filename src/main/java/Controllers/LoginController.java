@@ -1,7 +1,6 @@
 package Controllers;
 
 import Models.Beans.TarjetaBean;
-import Models.Beans.UsuarioBean;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

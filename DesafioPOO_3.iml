@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/css" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/js" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/Views" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/img" type="java-resource" />
     </content>
   </component>

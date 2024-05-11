@@ -1,43 +1,57 @@
-<%@ page import="Models.Beans.TarjetaBean" %><%--
-  Created by IntelliJ IDEA.
-  User: danie
-  Date: 9/5/2024
-  Time: 14:55
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <title>Inicio - Sesión Privada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estiloPrincipal.css">
 </head>
 <body>
 <%@include file="WEB-INF/Utilidades/navbar.jsp"%>
-<h2>Bienvenido ${datosUsuario.nombre}</h2>
-
-<h3>Selecciona una accion a tramitar</h3>
-<div class="container">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-6">
-            <div class="btn-group d-flex" role="group">
-                <a href="pagoServicios.jsp" class="buttonMenu"><span class="buttonSpan">Pagos</span></a>
-                <a href="transferenciaNacional.jsp" class="buttonMenu"><span class="buttonspan">Transferencias nacionales</span></a>
-                <a href="transferenciaInternacional.jsp" class="buttonMenu"><span class="buttonspan">Transferencias internacional</span>es</a>
+<p>${datosUsuario.nombre}</p>
+<header>
+    <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
+    <p>Tarjeta: <span id="numeroTarjeta">**** **** **** 1234</span></p>
+    <p>Monto Disponible: <span id="montoDisponible">22.26</span> Lempiras</p>
+</header>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/351/671/non_2x/vector-payment-icon.jpg" class="card-img-top" alt="Pago de Servicios">
+                <div class="card-body">
+                    <h5 class="card-title">Pago de Servicios</h5>
+                    <p class="card-text">Realiza pagos de servicios fácilmente.</p>
+                    <a href="#" class="btn btn-primary">Pagar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://media.ambito.com/p/2e5eb0c15fcfdd736d772eeb1c216db8/adjuntos/239/imagenes/038/099/0038099714/transferencia-dinerojpg.jpg" class="card-img-top" alt="Transferencia Nacional">
+                <div class="card-body">
+                    <h5 class="card-title">Transferencia Nacional</h5>
+                    <p class="card-text">Transfiere dinero a cuentas nacionales.</p>
+                    <a href="#" class="btn btn-primary">Transferir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://yosoyempleo.es/wp-content/uploads/2019/10/trans1-1.jpg" class="card-img-top" alt="Transferencia Internacional">
+                <div class="card-body">
+                    <h5 class="card-title">Transferencia Internacional</h5>
+                    <p class="card-text">Realiza transferencias internacionales de manera segura.</p>
+                    <a href="#" class="btn btn-primary">Transferir</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<%@include file="WEB-INF/Utilidades/footer.jsp"%>
 
-<jsp:include page="WEB-INF/Utilidades/footer.jsp"/>
-<!-- Scripts de Bootstrap (jQuery y Popper.js) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<!-- Script de Bootstrap -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

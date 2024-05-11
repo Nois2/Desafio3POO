@@ -194,7 +194,7 @@ public class TarjetaBean {
                 // Verificar si las credenciales coinciden con algún usuario en el archivo CSV
                 if (datosUsuario.length >= 5 && datosUsuario[2].equals(numeroTarjeta) && datosUsuario[3].equals(pin)) {
                     // Crear y retornar el objeto TarjetaBean
-                    return new TarjetaBean(datosUsuario[0], datosUsuario[3], datosUsuario[2], datosUsuario[2], Double.parseDouble(datosUsuario[4]));
+                    return new TarjetaBean(datosUsuario[0], datosUsuario[2], datosUsuario[3], datosUsuario[1], Double.parseDouble(datosUsuario[4]));
                 }
             }
         } catch (IOException e) {

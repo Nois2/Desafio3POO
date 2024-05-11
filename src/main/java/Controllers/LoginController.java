@@ -30,22 +30,16 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-      // Crear un objeto TarjetaBean para manejar los datos de la tarjeta
         TarjetaBean tarjetaBean = new TarjetaBean();
 
-        // Obtener los parámetros de la solicitud (número de tarjeta y PIN)
         String numTarjeta = request.getParameter("NumTarjeta");
         String pin = request.getParameter("PIN");
 
-        // Validar los datos de inicio de sesión
         if (isValidDataLogin(numTarjeta, pin)) {
-            // Si los datos son válidos, configurar los datos en el objeto TarjetaBean
             tarjetaBean.setNumeroTarjeta(numTarjeta);
             tarjetaBean.setPin(pin);
 
-            // Verificar las credenciales de la tarjeta
             if (tarjetaBean.verificarCredenciales()) {
-                // Si las credenciales son válidas, guardar los datos del usuario en la sesión
                 HttpSession session = request.getSession();
                 TarjetaBean datos = tarjetaBean.ObtenerDatosPorCredenciales(tarjetaBean.getNumeroTarjeta(), tarjetaBean.getPin());
                 session.setAttribute("datosUsuario", datos);

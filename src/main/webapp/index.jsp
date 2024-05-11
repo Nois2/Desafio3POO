@@ -21,10 +21,14 @@
             <label for="PIN">PIN:</label>
             <input type="password" id="PIN" name="PIN"/>
         </div>
+        <div class="input-Box">
+            <p>${mensaje}</p>
 
+        </div>
         <input type="submit" name="Enviar" value="Iniciar sesion">
 
         <a href="registroUsuario.jsp" class="linkBox">¿No tienes cuenta? Puedes crear una cuenta aquí </a>
+
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

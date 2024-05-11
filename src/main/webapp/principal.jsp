@@ -12,23 +12,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
+    <link href="css/estiloMenu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <jsp:include page="WEB-INF/Utilidades/navbar.jsp"/>
-<h2>Bienvenido usuario</h2>
+
+<h2>Bienvenido <%=session.getAttribute("datosUsuario")%></h2>
 <h3>Selecciona una accion a tramitar</h3>
 <div class="container">
     <div class="row justify-content-center mt-5">
         <div class="col-md-6">
             <div class="btn-group d-flex" role="group">
-                <a href="pagina1.jsp" class="btn btn-primary flex-fill">Página 1</a>
-                <a href="pagina2.jsp" class="btn btn-primary flex-fill">Página 2</a>
-                <a href="pagina3.jsp" class="btn btn-primary flex-fill">Página 3</a>
+                <a href="pagoServicios.jsp" class="buttonMenu"><span class="buttonSpan">Pagos</span></a>
+                <a href="transferenciaNacional.jsp" class="buttonMenu"><span class="buttonSpan">Transferencias nacionales</span></a>
+                <a href="transferenciaInternacional.jsp" class="buttonMenu"><span class="buttonSpan">Transferencias internacional</span>es</a>
             </div>
         </div>
     </div>
 </div>
+
+<jsp:include page="WEB-INF/Utilidades/footer.jsp"/>
 <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

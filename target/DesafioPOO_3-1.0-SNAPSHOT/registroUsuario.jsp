@@ -17,7 +17,7 @@
 <body>
 <div class="containerBox">
     <h2>Registro de usuario</h2>
-    <form id="registroForm" action="/registroControlador" method="post">
+    <form id="registroForm" action="/RegisterController" method="post">
 
         <div class="inputBox">
             <label for="Nombre">Nombre:</label>
@@ -45,6 +45,13 @@
         <div class="inputBox">
             <label for="PIN">PIN:</label>
             <input type="password" id="PIN" name="PIN" placeholder="Ingrese su PIN de 4 dígitos" required />
+        </div>
+        <div class="inputBox">
+            <label for="PIN">PIN:</label>
+            <input type="number" id="Saldo" name="Saldo" placeholder="Ingrese su saldo Inicial" required />
+        </div>
+        <div class="inputBox">
+            <a>${mensaje}</a>
         </div>
 
         <input type="submit" name="Enviar" value="Registrar usuario">

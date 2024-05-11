@@ -16,7 +16,7 @@
 </style>
 <body>
 <%@include file="WEB-INF/Utilidades/navbar.jsp"%>
-<p id="pais">${}</p>
+<p id="pais">${datosUsuario.pais}</p>
 <header>
     <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
     <p>Tarjeta: <span id="numeroTarjeta">**** **** **** 1234</span></p>

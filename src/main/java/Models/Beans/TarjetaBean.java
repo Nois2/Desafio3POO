@@ -179,38 +179,8 @@ public class TarjetaBean {
         }
 
 
-        /*Obtener datos por credenciales*/
 
-        public TarjetaBean[] ObtenerDatosPorCredenciales(String numeroTarjeta, String pin) throws IOException {
-            String rutaArchivo = "usuarios.txt";
-            BufferedReader br = null;
-            String linea = "";
-            ArrayList<TarjetaBean> credencialesEncontradas = new ArrayList<>();
-
-            try {
-                br = new BufferedReader(new FileReader(rutaArchivo));
-                // Leer el archivo línea por línea
-                while ((linea = br.readLine()) != null) {
-                    // Dividir la línea en sus partes (campos separados por coma)
-                    String[] datosUsuario = linea.split(",");
-                    // Verificar si las credenciales coinciden con algún usuario en el archivo CSV
-                    if (datosUsuario.length >= 5 && datosUsuario[2].equals(numeroTarjeta) && datosUsuario[3].equals(pin)) {
-                        TarjetaBean tarjeta = new TarjetaBean(datosUsuario[0], datosUsuario[1], datosUsuario[2], datosUsuario[3], Double.parseDouble(datosUsuario[4]));
-                        credencialesEncontradas.add(tarjeta); // Agregar las credenciales válidas encontradas
-                    }
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                // Manejar la excepción adecuadamente según tus necesidades
-            } finally {
-                if (br != null) {
-                    br.close(); // Cerrar el BufferedReader
-                }
-            }
-
-            return credencialesEncontradas.toArray(new TarjetaBean[0]);
-        }
-    public TarjetaBean ObtenerDatosPorCredenciales2(String numeroTarjeta, String pin) throws IOException {
+    public TarjetaBean ObtenerDatosPorCredenciales(String numeroTarjeta, String pin) throws IOException {
         String rutaArchivo = "usuarios.txt";
         BufferedReader br = null;
         String linea = "";

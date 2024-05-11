@@ -48,7 +48,7 @@ public class LoginController extends HttpServlet {
             if (tarjetaBean.verificarCredenciales()) {
                 // Si las credenciales son válidas, guardar los datos del usuario en la sesión
                 HttpSession session = request.getSession();
-                TarjetaBean datos = tarjetaBean.ObtenerDatosPorCredenciales2(tarjetaBean.getNumeroTarjeta(), tarjetaBean.getPin());
+                TarjetaBean datos = tarjetaBean.ObtenerDatosPorCredenciales(tarjetaBean.getNumeroTarjeta(), tarjetaBean.getPin());
                 session.setAttribute("datosUsuario", datos);
                 /*Lineas para validar que deberas se envia los datos
                 for (TarjetaBean dato : datos) {
